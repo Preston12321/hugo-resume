@@ -18,7 +18,9 @@
       {{ end }}
     </div>
     <div>
-      {{ .Content }}
+      <div style="max-width: 7.5in;text-align: justify;">
+        {{ .Content }}
+      </div>
       <ul class="list-inline list-social-icons mb-0">
         {{ range .Site.Params.handles }}
         <li class="list-inline-item">

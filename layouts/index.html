@@ -9,9 +9,9 @@
 {{ partial "sectionSummary" . }}
 {{ end }}
 {{ end }}
-{{ if .Site.Params.showOpenSource }}
-{{ with .Site.GetPage "section" "projects/contributions" }}
-{{ .Scratch.Set "sectionId" "contributions" }}
+{{ if .Site.Params.showCollaborations }}
+{{ with .Site.GetPage "section" "projects/collaborations" }}
+{{ .Scratch.Set "sectionId" "collaborations" }}
 {{ partial "sectionSummary" . }}
 {{ end }}
 {{ end }}
