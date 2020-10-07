@@ -7,8 +7,10 @@
     {{ end }}
   </div>
   <div class="resume-date">
-    <p>{{ .Description | safeHTML }}<p>
-        <p class><a href="{{.Permalink}}">Read more..</a></p>
+    <div style="max-width: 9.5in;">
+      <p>{{ .Description | safeHTML }}<p>
+    </div>
+    <p class><a href="{{.Permalink}}">Read more..</a></p>
   </div>
 </div>
 <div>{{ partial "techtags" . }}</div>
